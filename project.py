@@ -7,11 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/1-M3o-ML9JEbPIyIRk6sE8dasSD02w9p9
 """
 
-!pip install -q streamlit
+pip install -q streamlit
 
-!./ngrok authtokens 2P2Ra6ihOh8qzZYmylaooqyn3If_2pyz13z7aiBZKXY72P8Dq
+./ngrok authtokens 2P2Ra6ihOh8qzZYmylaooqyn3If_2pyz13z7aiBZKXY72P8Dq
 
-!pip install pyngrok
+pip install pyngrok
 
 from pyngrok import ngrok 
 public_url = ngrok.connect(port='8501')
